@@ -36,6 +36,12 @@ if(transcript.includes('show me the weather')){
   window.open("https://www.google.com/search?q=live+weather&oq=live+weather&aqs=chrome..69i57j0l4j69i60l3.2655j0j4&sourceid=chrome&ie=UTF-8");
 }
 
+if(transcript.includes('WhatsApp')){
+let p=document.createElement('p');
+  const word=document.querySelector('.words');
+   word.appendChild(p)
+p.textContent="I m Fine what About You";
+  word.appendChild(p);
 }
 
 recognisation.addEventListener('end',recognisation.start);
